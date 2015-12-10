@@ -8,7 +8,7 @@ var server = prerender({
     messageTimeout: process.env.PHANTOM_CLUSTER_MESSAGE_TIMEOUT
 });
 
-
+server.use(require('prerender-redis-cache'));
 // server.use(prerender.basicAuth());
 // server.use(prerender.whitelist());
 server.use(prerender.blacklist());
