@@ -11,7 +11,7 @@ var server = prerender({
 // server.use(require('prerender-redis-cache'));
 // server.use(prerender.basicAuth());
 // server.use(prerender.tokenAuth());
-// server.use(prerender.whitelist());
+server.use(prerender.whitelist());
 server.use(prerender.blacklist());
 // server.use(prerender.logger());
 server.use(prerender.removeScriptTags());
