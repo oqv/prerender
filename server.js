@@ -4,7 +4,7 @@ var prerender = require('./lib');
 
 var server = prerender({
     workers: process.env.PRERENDER_NUM_WORKERS,
-    iterations: process.env.PRERENDER_NUM_ITERATIONS
+    softIterations: process.env.PRERENDER_SOFT_ITERATIONS
 });
 
 
